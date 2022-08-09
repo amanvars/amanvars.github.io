@@ -72,12 +72,12 @@ a:hover {
   100% {
     opacity: 1; } }
 .main-nav {
-  background: #f4f4f4;
+  background-color: #415638;
   padding-top: 23px; }
   .main-nav nav ul li a {
-    color: #a7a7a7; }
+    color: #fff; }
   .main-nav nav ul li.active a {
-    color: #4d4d4d; }
+    color: #000; }
 
 .section.second {
   margin-bottom: 90px; }
