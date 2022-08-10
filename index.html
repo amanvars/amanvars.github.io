@@ -22,17 +22,25 @@
   margin: 3.2px;
 }
 body {
-  background-color: #c7d7c7;
+  background-color: #CEE5D0;
+  font-size: 1.1em;
 }
 
 .main-nav {
-  background-color: #415638;
+
+  background-color: #94B49F;
   padding-top: 23px; }
   .main-nav nav ul li a {
+  	font-family: "Playfair Display SC", serif;
     color: #fff; }
   .main-nav nav ul li.active a {
     color: #000; }
 
+
+.skills .container::after {
+    
+    content: url(../img/separatora.png) ;
+    left: 20px; }
 
 	</style>
 </head>
@@ -40,8 +48,8 @@ body {
 
 	<!-- Navigation -->
 	<div class="main-nav">
-		<div class="container">
-			<header class="group top-nav">
+		<div class="container" style="max-width: inherit; ">
+			<header class="group top-nav" style="margin: auto;text-align: center;">
 				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
 				    <span class="logo">AV</span>
 				</div>
@@ -73,8 +81,8 @@ body {
 					<h1>I live in<br><span id="typed"></span></h1>
 				</div>
 				<p>
-					An enterprising, versatile and curious grad student at the <strong>Technical University of Munich, Germany</strong>. I was born and brought up in <strong>Aligarh, India</strong>.
-					<br>Currently, pursuing MSc Informatics and working as Working Student @ TrustYou. 
+					An enterprising, versatile and curious grad student at the <strong><a href="https://www.in.tum.de/en/in/cover-page/" target="_blank">Technical University of Munich, Germany</a></strong>. I was born and brought up in <strong>Aligarh, India</strong>. 
+					<br>Currently, pursuing MSc Informatics and working as Working Student @ <a href="https://www.trustyou.com/" target="_blank">TrustYou</a>. 
 				</p>
 				<h2>About Me</h2>
 				<ul class="work-list">
@@ -229,7 +237,7 @@ body {
 	</div>
 
 	<!-- Technical Skills -->
-	<div class="skills section second" id="skills">
+	<div class="skills section second" id="skills" style="">
 		<div class="container">
 			<h1>Skills</h1>
 			<!-- <ul class="skill-list list-flat"> -->
@@ -243,10 +251,10 @@ body {
 				    <button type="button" class="btn btn-outline bold">PHP</button>
 				    <button type="button" class="btn btn-outline bold">ABAP by SAP</button>
 				  </div>
+				  <h4></h4>
 
-<br><br>
 				<h4>Tools/Frameworks</h4>
-					  <div class="btn-group mr-2" role="group" aria-label="First group">
+					  <div class="btn-group " role="group" aria-label="First group">
 					    <button type="button" class="btn btn-outline bold">RASA Core-NLU</button>
 					    <button type="button" class="btn btn-outline bold">NLTK</button>
 					    <button type="button" class="btn btn-outline bold">Keras</button>
@@ -263,18 +271,21 @@ body {
 					    <button type="button" class="btn btn-outline bold">git</button>
 					    <button type="button" class="btn btn-outline bold">Docker</button>
 					  </div>
-<br><br>
+
+					  <h4></h4>
 				<h4>Domain</h4>
-					  <div class="btn-group mr-2" role="group" aria-label="First group">
+					  <div class="btn-group " role="group" aria-label="First group">
 					    <button type="button" class="btn btn-outline bold">Natural Language Processing</button>
 					    <button type="button" class="btn btn-outline bold">Machine Learning</button>
 					    <button type="button" class="btn btn-outline bold">Microservices</button>
 					    <button type="button" class="btn btn-outline bold">Software Engineering Patterns</button>
 					    <button type="button" class="btn btn-outline bold">Unit Testing</button>
 					  </div>
-<br><br>
+					  
+					  <h4></h4>
+
 				<h4>Soft Skills</h4>
-					  <div class="btn-group mr-2" role="group" aria-label="First group">
+					  <div class="btn-group " role="group" aria-label="First group">
 					    <button type="button" class="btn btn-outline bold">Leadership</button>
 					    <button type="button" class="btn btn-outline bold">Technical Writing</button>
 					    <button type="button" class="btn btn-outline bold">Attention to details</button>
@@ -389,7 +400,7 @@ body {
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
 		// Change to edit type effect
-		strings: ["the famous beer city", "your galaxy", "in the innovative world"],
+		strings: ["the famous beer city", "your galaxy", "the innovative world"],
 
 		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>
